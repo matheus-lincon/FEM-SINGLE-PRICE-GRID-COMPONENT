@@ -1,0 +1,61 @@
+:root {
+  /* colors */
+  --primary: hsl(179, 62%, 43%);
+  --secondary: hsl(71, 73%, 54%);
+  --neutral-0: hsl(0, 0%, 100%);
+  --neutral-100: hsl(204, 43%, 93%);
+  --neutral-500: hsl(218, 22%, 67%);
+
+  /* fonts */
+  --size-xsm: 0.875rem; /* 14px */
+  --size-sm: 1rem; /* 16px */
+  --size-m: 1.125rem; /* 18px */
+  --size-xm: 1.25rem; /* 20px */
+  --size-l: 1.5rem; /* 25px */
+  --size-xl: 32rem; /* 32px */
+
+  --fs-intro-title: clamp(var(--size-xm), 1.1786rem + 0.3571vw, var(--size-l));
+  --fs-intro-subtitle: clamp(
+    var(--size-sm),
+    0.9643rem + 0.1786vw,
+    var(--size-xm)
+  );
+  --fs-intro-desc: clamp(var(--size-xsm), 0.8393rem + 0.1786vw, var(--size-sm));
+
+  --ff-primary: "Karla", sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* spacing */
+  --spacing-sm: 1rem; /* 16px */
+  --spacing-m: 1.125rem; /* 18px */
+  --spacing-fluid-1: clamp(1.75rem, 1.4643rem + 1.4286vw, 2.75rem); /* 28-44 */
+  --spacing-fluid-2: clamp(1.5rem, 1.2143rem + 1.4286vw, 2.5rem); /* 24-40 */
+  --spacing-fluid-3: clamp(1.5rem, 1.4286rem + 0.3571vw, 1.75rem); /* 24-28 */
+  --spacing-fluid-4: clamp(2rem, 1.7857rem + 1.0714vw, 2.75rem); /* 32-44 */
+  --spacing-fluid-5: clamp(2.25rem, 2.0357rem + 1.0714vw, 3rem); /* 36-48 */
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("../assets/fonts/Karla-VariableFont_wght.ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400 700;
+}
+
+body {
+  background-color: var(--neutral-100);
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+}
