@@ -30,6 +30,7 @@
   /* spacing */
   --spacing-sm: 1rem; /* 16px */
   --spacing-m: 1.125rem; /* 18px */
+  --spacing-xm: 1.5rem; /* 24px */
   --spacing-fluid-1: clamp(1.75rem, 1.4643rem + 1.4286vw, 2.75rem); /* 28-44 */
   --spacing-fluid-2: clamp(1.5rem, 1.2143rem + 1.4286vw, 2.5rem); /* 24-40 */
   --spacing-fluid-3: clamp(1.5rem, 1.4286rem + 0.3571vw, 1.75rem); /* 24-28 */
