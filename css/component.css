@@ -1,0 +1,122 @@
+.main__container {
+  padding: var(--spacing-xm);
+}
+
+.section {
+  font-family: var(--ff-primary);
+  box-shadow: 0px 20px 20px 0px var(--neutral-500);
+}
+/* INTRO */
+.intro {
+  display: grid;
+  gap: var(--spacing-xm);
+
+  background-color: var(--neutral-0);
+  padding-inline: var(--spacing-fluid-2);
+  padding-block-start: var(--spacing-fluid-4);
+  padding-block-end: var(--spacing-fluid-5);
+
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.intro__title {
+  font-size: var(--fs-intro-title);
+  font-weight: var(--fw-bold);
+  color: var(--primary);
+}
+
+.intro__subtitle {
+  font-size: var(--fs-intro-subtitle);
+  font-weight: var(--fw-bold);
+  color: var(--secondary);
+}
+
+.intro__desc {
+  font-size: var(--fs-intro-desc);
+  font-weight: var(--fw-regular);
+  color: var(--neutral-500);
+  line-height: 1.5;
+}
+
+/* SUBSCRIPTION */
+
+.subscription {
+  display: grid;
+  gap: var(--spacing-xm);
+
+  background-color: var(--primary);
+  padding: var(--spacing-fluid-2);
+  padding-block-start: var(--spacing-fluid-1);
+  color: var(--neutral-0);
+}
+
+.subscription__title {
+  font-size: var(--size-m);
+  font-weight: var(--fw-bold);
+}
+
+.subscription__price {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-block-end: calc(var(--spacing-sm) * -1);
+
+  font-size: var(--size-xl);
+  font-weight: var(--fw-bold);
+}
+
+.subscription__price span {
+  display: block;
+  font-size: var(--size-sm);
+  font-weight: var(--fw-regular);
+  color: var(--neutral-100);
+}
+
+.subscription__button {
+  display: grid;
+  place-items: center;
+
+  font-size: var(--size-sm);
+  font-weight: var(--fw-bold);
+
+  border-radius: 0.5rem;
+  text-decoration: none;
+  padding: var(--spacing-sm);
+  background-color: var(--secondary);
+  color: var(--neutral-100);
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  gap: var(--spacing-fluid-3);
+
+  background-color: hsl(179, 47%, 52%);
+  padding: var(--spacing-fluid-2);
+  padding-block-start: var(--spacing-fluid-1);
+  color: var(--neutral-0);
+}
+
+.features__title {
+  font-size: var(--size-m);
+  font-weight: var(--fw-bold);
+}
+
+.features__list {
+  display: grid;
+  gap: 0.3rem;
+  color: var(--neutral-100);
+}
+
+/* MEDIA  */
+@media screen and (min-width: 48rem) {
+  .section {
+    max-width: 40rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .intro {
+    grid-column: 1 / -1;
+  }
+}
