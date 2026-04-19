@@ -12,7 +12,7 @@
   --size-m: 1.125rem; /* 18px */
   --size-xm: 1.25rem; /* 20px */
   --size-l: 1.5rem; /* 25px */
-  --size-xl: 32rem; /* 32px */
+  --size-xl: 2rem; /* 32px */
 
   --fs-intro-title: clamp(var(--size-xm), 1.1786rem + 0.3571vw, var(--size-l));
   --fs-intro-subtitle: clamp(
